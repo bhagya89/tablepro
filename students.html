@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  -->
+    <title>Student Records</title>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 min-h-screen flex items-center justify-center">
+    
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-white text-center mb-8">Student Records</h1>
+        
+        <table id="studentsTable" class="min-w-full bg-white shadow-md rounded overflow-hidden">
+            <thead class="bg-blue-500 text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Name</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Email</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Gender</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Address</th>
+                    <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider">Contact</th>
+                    <th class="px-6 py-3 text-center text-xs font-bold uppercase tracking-wider">Operations</th>
+                </tr>
+            </thead>
+            
+            <tbody id="studentsTableBody" class="divide-y divide-gray-200">
+                <!-- Data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- JavaScript at the end of body -->
+     
+    <script src="scriptStudent.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html>
